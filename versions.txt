@@ -1,0 +1,64 @@
+<Versions of TPS Mod>
+v0.1:
+First Version!
+
+Additions:
+	-When a world is joined, it now announces it!
+	-When a world is left, is now announces it!
+
+v0.2:
+
+Additions:
+	-Timed tps counter, measures every half a second.
+Bugs:
+	-Mod Version # not changed
+	
+v0.2.1:
+
+Changes:
+	-The tps is now measured every 2 seconds
+Bugs:
+	-Mod Version # not changed
+	
+v0.2.3:
+
+Changes:
+	-tps now measured every minute
+	-Mod version text updated
+	-Timer initialization now done earlier. (postinit to preinit if you care)
+	
+Additions:
+	-Added constructor to tps counter to see when tps counter starts
+	
+v0.3.1:
+
+Changes:
+	-tps now displays in chat
+
+Additions:
+	-Lang file for text now	
+	-Blank "DisplayMessage" class
+
+v1.0:
+
+Changes:
+	-Complete redo of the classes:
+		-Removal of GuiF3 and MCThing Classes
+		-Addition of ThreadLogged and Ads Classes
+		-CheckLoggedIn renamed to WorldLogger
+		-TPSCounter renamed to GetTPS
+	-World Logging is now timed.
+Additions:
+	-TPS is no longer a time buisness, as typing /tps in chat will activate the tps command, with a slight delay, instead of waiting for the tps to show
+Bugs:
+	-Possible crash of thread from fail to initialize used variable.
+
+v1.1:
+Additions:
+	-added the command /tpstoall is added which gets the tps and shares it to everyone
+	-including actual client size commands, which means less lag b/w doing /tps and getting the tps, and /tpstoall and getting the tps and sharing it
+	-you can do /tps help and /tpstoall help to see the command usage of the command.
+Bug-Fixes:
+	-No more weird tps things upon your first /tps per log-in to a world
+Bugs:
+	-I does introduce a bug where typing "tps" into chat insteads executes the command "/tps" instead of entering "tps" into chat.
