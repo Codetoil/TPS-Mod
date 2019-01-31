@@ -62,3 +62,19 @@ Bug-Fixes:
 	-No more weird tps things upon your first /tps per log-in to a world
 Bugs:
 	-I does introduce a bug where typing "tps" into chat insteads executes the command "/tps" instead of entering "tps" into chat.
+
+v1.2 Beta 1:
+
+Changes:
+	-/tps and /tpstoall commands more sophisticated
+	-now must use //tps and //tpstoall to activate commands. This prevents you from typing "tps" into chat and being executed as the "/tps" command.
+	
+	-WorldLogger renamed to ClientWorldLogger
+	-Many debug infos now reduced to debugs
+	-Uses built-in triggers for world loading and unloading
+	-Removal of class "Ads"
+Bug-Fixes:
+	-Plenty of small things that I can't think of after this long day.
+Left in debug features:
+	-When you launch a game with this, in the chat it states "Thread". This was a left in debug feature that I intended to remove. Doesn't effect the gameplay at all, so it doesn't matter anyway.
+-Incomplete atm
