@@ -5,6 +5,8 @@ If you see "This kind of file may harm your computer", just click OK, as this fi
 My twitter is @littoil, my discord is @Littoil#7253, and my youtube is Littoil.
 
 Links to this page:
-https://tinyurl.com/tpsmod \n
-https://tinyurl.com/lit-tpsmod \n
+https://tinyurl.com/tpsmod
+
+https://tinyurl.com/lit-tpsmod
+
 https://github.com/Littoil/TPS-Mod
