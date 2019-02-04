@@ -6,5 +6,7 @@ My twitter is @littoil, my discord is @Littoil#7253, and my youtube is Littoil.
 
 Links to this page:
 https://tinyurl.com/tpsmod
+
 https://tinyurl.com/lit-tpsmod
+
 https://github.com/Littoil/TPS-Mod
