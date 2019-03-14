@@ -13,4 +13,4 @@ https://tinyurl.com/lit-tpsmod
 https://github.com/Littoil/TPS-Mod
 
 ## Source
-https://github.com/Littoil/TPS-Mod
+https://github.com/Littoil/TPS-Mod-Source
