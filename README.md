@@ -14,3 +14,6 @@ https://github.com/Littoil/TPS-Mod
 
 ## Source
 https://github.com/Littoil/TPS-Mod-Source
+
+## Github
+https://discord.gg/XgrbTjm
