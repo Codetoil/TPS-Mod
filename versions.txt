@@ -1,59 +1,62 @@
 <Versions of TPS Mod>
-v0.1:
+v0.1: August 7th 2018
 First Version!
+
+This version does not measure the tps... :P 
+v2.0+ does measure the tps though...
 
 Additions:
 	-When a world is joined, it now announces it!
 	-When a world is left, is now announces it!
 
-v0.2:
+v0.2: August 20th 2018
 
 Additions:
 	-Timed tps counter, measures every half a second.
 Bugs:
-	-Mod Version # not changed
+	-Mod Version # not changed due to forgetness
 	
-v0.2.1:
+v0.2.1: August 20th 2018
 
 Changes:
 	-The tps is now measured every 2 seconds
 Bugs:
 	-Mod Version # not changed
 	
-v0.2.3:
+v0.2.3: August 20th 2018
 
-Changes:
-	-tps now measured every minute
+Changes: 
+	-tps now measured every minute to prevent spam and irrelevant tps measurements
 	-Mod version text updated
-	-Timer initialization now done earlier. (postinit to preinit if you care)
+	-Timer initialization now done earlier. (preinit from postinit)
 	
 Additions:
 	-Added constructor to tps counter to see when tps counter starts
 	
-v0.3.1:
+v0.3.1: August 21st 2018
 
 Changes:
-	-tps now displays in chat
+	-tps now displays in chat instead of in the console
 
 Additions:
 	-Lang file for text now	
 	-Blank "DisplayMessage" class
 
-v1.0:
+v1.0: September 3rd 2018
 
 Changes:
-	-Complete redo of the classes:
+	-Complete rename of the classes:
 		-Removal of GuiF3 and MCThing Classes
 		-Addition of ThreadLogged and Ads Classes
 		-CheckLoggedIn renamed to WorldLogger
 		-TPSCounter renamed to GetTPS
 	-World Logging is now timed.
 Additions:
-	-TPS is no longer a time buisness, as typing /tps in chat will activate the tps command, with a slight delay, instead of waiting for the tps to show
+	-TPS is no longer a timed buisness, as typing /tps in chat will activate the tps command, with a slight delay, instead of waiting for the tps to show
 Bugs:
 	-Possible crash of thread from fail to initialize used variable.
 
-v1.1:
+v1.1: January 26th 2019
 Additions:
 	-added the command /tpstoall is added which gets the tps and shares it to everyone
 	-including actual client size commands, which means less lag b/w doing /tps and getting the tps, and /tpstoall and getting the tps and sharing it
@@ -63,7 +66,28 @@ Bug-Fixes:
 Bugs:
 	-I does introduce a bug where typing "tps" into chat insteads executes the command "/tps" instead of entering "tps" into chat.
 
-v1.2 Beta 1:
+v1.2: May 27th 2019
+
+Changes:
+	-The mod now uses forge events to check, for example, if a world is loading, instead of guessing and checking to see if the world is loaded
+	-//tps and //tpstoall has more readable and advanced code behind it.
+	-You now must type //tps instead of just /tps. Sorry!
+Bug-Fixes:
+	-Don't remember exactly, though there is probably a bunch behind the scenes.
+	-No longer gives you the tps if you type in "tps" in chat, respectively for alltps
+Bugs:
+	-Turns out that the weird tps output is still there. :O :P (fixed in version 2.0)
+	
+v2.0: To Come
+
+A complete re-write of the code. Compatible with many versions of Minecraft and Modloaders. Will come when ready.
+The latest source is at https://www.github.com/Codetoil/TPS-Mod-Source if you want a pre-mature build. Not compiled though, you will have to compile it yourself.
+
+
+
+Betas:
+
+v1.2 Beta 1: January 30th 2019
 
 Changes:
 	-/tps and /tpstoall commands more sophisticated
