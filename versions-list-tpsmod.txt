@@ -72,17 +72,17 @@ Changes:
 	-The mod now uses forge events to check, for example, if a world is loading, instead of guessing and checking to see if the world is loaded
 	-//tps and //tpstoall has more readable and advanced code behind it.
 	-You now must type //tps instead of just /tps. Sorry!
+	-States the version number on the //tpstoall command, and is rewritten
 Bug-Fixes:
 	-Don't remember exactly, though there is probably a bunch behind the scenes.
 	-No longer gives you the tps if you type in "tps" in chat, respectively for alltps
 Bugs:
 	-Turns out that the weird tps output is still there. :O :P (fixed in version 2.0)
 	
-v2.0: To Come
+v2.0.1: To Come
 
-A complete re-write of the code. Compatible with many versions of Minecraft and Modloaders. Will come when ready.
-The latest source is at https://www.github.com/Codetoil/TPS-Mod-Source if you want a pre-mature build. Not compiled though, you will have to compile it yourself.
-
+A complete re-write of the code. Compatible with many versions of Minecraft and Modloaders. Will come when ready. Beta versions are now available, including precompîled versions
+See below for the changelog
 
 
 Betas:
@@ -92,7 +92,6 @@ v1.2 Beta 1: January 30th 2019
 Changes:
 	-/tps and /tpstoall commands more sophisticated
 	-now must use //tps and //tpstoall to activate commands. This prevents you from typing "tps" into chat and being executed as the "/tps" command.
-	
 	-WorldLogger renamed to ClientWorldLogger
 	-Many debug infos now reduced to debugs
 	-Uses built-in triggers for world loading and unloading
@@ -102,3 +101,15 @@ Bug-Fixes:
 Left in debug features:
 	-When you launch a game with this, in the chat it states "Thread". This was a left in debug feature that I intended to remove. Doesn't effect the gameplay at all, so it doesn't matter anyway.
 -Incomplete atm
+
+v2.0.1 Beta 1: June 21st 2019
+
+Features:
+	-Now supports Minecraft:
+		1.8
+		1.12
+		1.13
+		Hope to support 1.14 soon
+	-The code has been rewritten to not be dependant on Forge 1.7 and be more readable and more efficient.
+	-Now uses a custom modloader that is just a forge mod.
+	-TPSMod is now written with future development more-in-mind
