@@ -6,6 +6,7 @@ To install, download both the litlaunch version for the minecraft version you wa
 Put the tpsmod jar into a new folder named, "mods_litlaunch", without the quotes, and the litlaunch jar into the "mods" folder, like every other mod 
 
 Note that the "This kind of file may harm your computer" messages are shown for all jar files
+
 My twitter is @codetoil, my discord is @Codetoil#7253, and my youtube is Codetoil.
 
 
