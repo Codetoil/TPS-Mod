@@ -1,5 +1,5 @@
 # TPS Mod - How to install - v2.x.x
-This mod is for Minecraft Forge for Minecraft v1.7.10-v1.13.2
+This mod is for Minecraft Forge for Minecraft v1.7.10-v1.14.4
 
 To install, download both the litlaunch version for the minecraft version you want, and the tpsmod version you want.
 
@@ -26,7 +26,7 @@ https://tinyurl.com/lit-tpsmod
 https://github.com/Codetoil/TPS-Mod
 
 ## Source of TPS-Mod
-https://github.com/Codetoil/TPS-Mod-Source
+https://github.com/Codetoil/LitLaunch-Source
 
 ## Planet Minecraft
 https://www.planetminecraft.com/mod/tps-mod/
