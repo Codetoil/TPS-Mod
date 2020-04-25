@@ -1,15 +1,14 @@
 
-ext.litlaunch112 = project.project(':versions:forge:mc1.12')
-
 apply plugin: 'java'
 
 dependencies {
-     compile litlaunch112
+     compile project(":litlaunch-common")
      compile 'com.google.code.gson:gson:2.8.0'
      compile 'com.google.guava:guava:21.0'
 }
 
-version='2.0.1.2.16'
+version='2.0.1.3.0'
+archivesBaseName = 'tpsmod'
 
 repositories {
      mavenCentral()
@@ -20,10 +19,65 @@ repositories {
 sourceSets {
      main {
           java {
-               srcDir "../tpsmodsrc/src"
+               srcDir "src"
           }
           resources {
-               srcDir "../tpsmodsrc/src"
+               srcDir "src"
           }
      }
+}
+
+task cleanModsFolder1710(type: Delete) {
+     delete fileTree("$projectDir/../litlaunch-forge-1.7.10/run/mods_litlaunch").matching {
+          include "**/tpsmod-**.jar"
+     }
+}
+
+task copyTPSMod1710(type: Copy) {
+     from file("$buildDir/libs/tpsmod-"+version+".jar")
+     into file("$projectDir/../litlaunch-forge-1.7.10/run/mods_litlaunch")
+}
+
+task cleanModsFolder189(type: Delete) {
+     delete fileTree("$projectDir/../litlaunch-forge-1.8.9/run/mods_litlaunch").matching {
+          include "**/tpsmod-**.jar"
+     }
+}
+
+task copyTPSMod189(type: Copy) {
+     from file("$buildDir/libs/tpsmod-"+version+".jar")
+     into file("$projectDir/../litlaunch-forge-1.8.9/run/mods_litlaunch")
+}
+
+task cleanModsFolder1122(type: Delete) {
+     delete fileTree("$projectDir/../litlaunch-forge-1.12.2/run/mods_litlaunch").matching {
+          include "**/tpsmod-**.jar"
+     }
+}
+
+task copyTPSMod1122(type: Copy) {
+     from file("$buildDir/libs/tpsmod-"+version+".jar")
+     into file("$projectDir/../litlaunch-forge-1.12.2/run/mods_litlaunch")
+}
+
+task cleanModsFolder1144(type: Delete) {
+     delete fileTree("$projectDir/../litlaunch-forge-1.14.4/run/mods_litlaunch").matching {
+          include "**/tpsmod-**.jar"
+     }
+}
+
+task copyTPSMod1144(type: Copy) {
+     from file("$buildDir/libs/tpsmod-"+version+".jar")
+     into file("$projectDir/../litlaunch-forge-1.14.4/run/mods_litlaunch")
+}
+
+task cleanModsFolder1152(type: Delete) {
+     delete fileTree("$projectDir/../litlaunch-forge-1.15.2/run/mods_litlaunch").matching {
+          include "**/tpsmod-**.jar"
+     }
+}
+
+task copyTPSMod1152(type: Copy) {
+     from file("$buildDir/libs/tpsmod-"+version+".jar")
+     into file("$projectDir/../litlaunch-forge-1.15.2/run/mods_litlaunch")
 }
