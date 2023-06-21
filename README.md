@@ -1,34 +1,35 @@
-TPS Mod - How to install - v2.x.x
+# TPS Mod - How to install - v2.x.x
 This mod is for LitLaunch for Minecraft v1.7.10-v1.15.2
 
-To install, head to https://www.curseforge.com/minecraft/mc-mods/litlaunch to download litlaunch.
+To install, head to https://www.curseforge.com/minecraft/mc-mods/litlaunch  to download litlaunch.
 
 Put the tpsmod jar into a new folder named, "mods_litlaunch", within the .minecraft folder
-My twitter is @codetoil, my discord is @Codetoil#7253, and my youtube is Codetoil.
 
 DM me if you need help.
 
-TPS Mod - How to install - 0.x.x/1.x.x
-I prefer you download the 2.x.x version.
+# TPS Mod - How to install - 0.x.x/1.x.x
+This mod is for Minecraft Forge for Minecraft v1.7.10
+To install simply select the version you want to install in the github page, and then click download.
+If you see "This kind of file may harm your computer", just click OK, as it shows for all jar files. If you are uncomfortable, download from Planet Minecraft
+My twitter is @codetoil, my discord is @codetoil, and my youtube is Codetoil.
 
-Versions 0.x.x/1.x.x of this mod are for Minecraft Forge for Minecraft v1.7.10
+## Links to this page
 
-To install simply select the version you want to install in the github page, and then click download, and put in the mods folder. 
-
-My twitter is @codetoil, my discord is @Codetoil#7253, and my youtube is Codetoil.
-
-Links to GitHub
 https://tinyurl.com/tpsmod
 
 https://tinyurl.com/lit-tpsmod
 
 https://github.com/Codetoil/TPS-Mod
 
-Source of TPS-Mod
-https://github.com/Codetoil/LitLaunch-Source
+## Source of TPS-Mod
+https://github.com/Codetoil/LitLaunch-Minecraft/tree/old/tpsmodsrc
 
-Planet Minecraft
+## Planet Minecraft
 https://www.planetminecraft.com/mod/tps-mod/
 
-Discord
+## CurseForge
+https://legacy.curseforge.com/minecraft/mc-mods/tps-mod
+
+## Discord
 https://discord.gg/XgrbTjm
+
