@@ -13,7 +13,7 @@ https://tinyurl.com/lit-tpsmod
 https://github.com/Codetoil/TPS-Mod
 
 ## Source of TPS-Mod
-https://github.com/Codetoil/LitLaunch-Source
+[https://github.com/Codetoil/LitLaunch-Minecraft/tree/old/tpsmodsrc](https://github.com/Codetoil/LitLaunch-Minecraft/tree/old/tpsmodsrc)
 
 ## Planet Minecraft
 https://www.planetminecraft.com/mod/tps-mod/
