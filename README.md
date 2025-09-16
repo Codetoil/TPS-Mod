@@ -1,12 +1,7 @@
-# LitLaunch Source
-This is the source to the LitLaunch ModLoader, and the TPSMod too (lol).
-
-v1.2 of TPSMod is included in the LitLaunch/tpsmodsrc-1.2/main folder. 
-
-#### TODO add \.gitignore-s so that I don't have to wait so long.
+# TPSMod
 
 ### Installing development enviorment
-Simple `git clone` the repo!
+Simply `git clone` the repo!
 
 You may have to modify some of the build.gradle(s) so that the build doesn't reference D:/ and C:/
 
