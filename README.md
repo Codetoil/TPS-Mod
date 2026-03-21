@@ -1,9 +1,14 @@
 # TPSMod
 
+### Branches
+The `dev` and `main` branches contain source code for the current revision (3.x)
+
+The `legacy` branches contain source code for old versions (0.x, 1.x, 2.x) either as-is or reconstructed along with binaries for old versions.
+These versions can be reconstructed using the standard MinecraftForge MDK for 1.7.10 for 0.x and 1.x. 2.x can be reconstructed using the
+[LitLaunch MDK](https://github.com/Codetoil/LitLaunch-Minecraft/blob/v0.0.5/LitLaunch-SDK)
+
 ### Installing development enviorment
 Simply `git clone` the repo!
-
-You may have to modify some of the build.gradle(s) so that the build doesn't reference D:/ and C:/
 
 ## Pull request format and acceptability
 
@@ -18,7 +23,7 @@ Once reviewed, the pull request might be accepted or declined based on whether t
 -harm a group of people
 
 -harm the public
-	
+
 -Don't change the code to give yourself an advantage over someone else in any way. I'm not making this mod a hacked client!
 
 -All changes in the code must not change anything gameplaywise. Again, I'm not making this mod a hacked client!
