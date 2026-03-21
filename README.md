@@ -9,7 +9,7 @@ You may have to modify some of the build.gradle(s) so that the build doesn't ref
 
 Once reviewed, the pull request might be accepted or declined based on whether the code is with the rules of the mod.
 
-### the rules of the mod
+### The rules of the mod (for pull requests)
 
 -Don't change the code to:
 
