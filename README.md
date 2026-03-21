@@ -1,11 +1,40 @@
 # TPSMod
 
-### Branches
+## Branches
 The `dev` and `main` branches contain source code for the current revision (3.x)
 
 The `legacy` branch contain source code for old versions (0.x, 1.x, 2.x) either as-is or reconstructed along with binaries for old versions.
 These versions can be reconstructed using the standard MinecraftForge MDK for 1.7.10 for 0.x and 1.x. 2.x can be reconstructed using the
 [LitLaunch MDK](https://github.com/Codetoil/LitLaunch-Minecraft/blob/v0.0.5/LitLaunch-SDK)
+
+
+## Installing
+
+### TPS Mod - How to install - v2.x.x
+This mod is for LitLaunch for Minecraft v1.7.10-v1.15.2
+
+To install, head to https://www.curseforge.com/minecraft/mc-mods/litlaunch to download litlaunch.
+
+Put the tpsmod jar into a new folder named, "mods_litlaunch", within the .minecraft folder
+
+DM me if you need help.
+
+### TPS Mod - How to install - 0.x.x/1.x.x
+This mod is for Minecraft Forge for Minecraft 1.7.10
+To install simply select the version you want to install in the github page, and then click download.
+If you see "This kind of file may harm your computer", just click OK, as it shows for all jar files. If you are uncomfortable, download from Planet Minecraft
+My twitter is @codetoil, my discord is @codetoil, and my youtube is Codetoil.
+
+#### Planet Minecraft
+https://www.planetminecraft.com/mod/tps-mod/
+
+#### CurseForge
+https://curseforge.com/minecraft/mc-mods/tps-mod
+
+#### Discord
+https://discord.gg/XgrbTjm
+
+# Building
 
 ### Installing development enviorment
 Simply `git clone` the repo!
@@ -36,5 +65,4 @@ The free speach statement can be overriden by Github's own rules if it has any a
 
 Thank you and have fun modding!
 
-#### Discord
-<https://discord.gg/XgrbTjm>
+
