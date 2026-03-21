@@ -1,4 +1,4 @@
-package io.github.codetoil.tpsmod;
+package io.codetoil.tpsmod;
 
 public class OldLitLaunchVersionException extends RuntimeException {
     public OldLitLaunchVersionException()

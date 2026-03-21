@@ -2,7 +2,7 @@
  * Copyright Codetoil (c) 2019
  */
 
-package io.github.codetoil.tpsmod.commands;
+package io.codetoil.tpsmod.commands;
 
 import io.github.codetoil.litlaunch.api.Command;
 import io.github.codetoil.litlaunch.api.FrontEnd;
@@ -10,8 +10,8 @@ import io.github.codetoil.litlaunch.api.IDoThing;
 import io.github.codetoil.litlaunch.api.arguments.ArgumentWrapper;
 import io.github.codetoil.litlaunch.api.arguments.IArgumentValue;
 import io.github.codetoil.litlaunch.core.LaunchCommon;
-import io.github.codetoil.tpsmod.MeasureTPSdrop;
-import io.github.codetoil.tpsmod.TPSMod;
+import io.codetoil.tpsmod.MeasureTPSdrop;
+import io.codetoil.tpsmod.TPSMod;
 
 import java.math.RoundingMode;
 import java.text.DecimalFormat;

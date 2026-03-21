@@ -1,0 +1,29 @@
+plugins {
+    id("java-library")
+    id("idea")
+    id("eclipse")
+    id("maven-publish")
+    id("com.gradleup.shadow") version "9.4.0"
+}
+
+repositories {
+    mavenCentral()
+    maven {
+        name = "Mojang"
+        url = uri("https://libraries.minecraft.net")
+    }
+}
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(8)
+    }
+}
+
+val brigader_version: String by project
+val guava_version: String by project
+
+dependencies {
+    api("com.mojang:brigadier:$brigader_version")
+    api("com.google.guava:guava:$guava_version")
+}

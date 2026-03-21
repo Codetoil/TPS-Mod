@@ -2,7 +2,7 @@
  * Copyright Codetoil (c) 2019
  */
 
-package io.github.codetoil.tpsmod;
+package io.codetoil.tpsmod;
 
 import com.google.common.collect.BiMap;
 import com.google.common.collect.HashBiMap;
@@ -15,7 +15,7 @@ import io.github.codetoil.litlaunch.api.arguments.ArgumentWrapper;
 import io.github.codetoil.litlaunch.core.LaunchCommon;
 import io.github.codetoil.litlaunch.core.event.LitEvent;
 import io.github.codetoil.litlaunch.core.event.LitEventHandler;
-import io.github.codetoil.tpsmod.commands.CommandHandler;
+import io.codetoil.tpsmod.commands.CommandHandler;
 
 import java.io.IOException;
 import java.util.ArrayList;

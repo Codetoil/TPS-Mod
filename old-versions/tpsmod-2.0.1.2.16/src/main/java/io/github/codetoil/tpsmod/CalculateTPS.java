@@ -2,7 +2,7 @@
  * Copyright Codetoil (c) 2019
  */
 
-package io.github.codetoil.tpsmod;
+package io.codetoil.tpsmod;
 
 import io.github.codetoil.litlaunch.api.FrontEnd;
 import io.github.codetoil.litlaunch.core.LaunchCommon;
