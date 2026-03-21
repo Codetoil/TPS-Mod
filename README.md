@@ -3,7 +3,7 @@
 ## Branches
 The `dev` and `main` branches contain source code for the current revision (3.x)
 
-The `legacy` branch contain source code for old versions (0.x, 1.x, 2.x) either as-is or reconstructed along with binaries for old versions.
+The `legacy` branch contain source code for old versions (0.x, 1.x, 2.x) either as-is or reconstructed along with binaries.
 These versions can be reconstructed using the standard MinecraftForge MDK for 1.7.10 for 0.x and 1.x. 2.x can be reconstructed using the
 [LitLaunch MDK](https://github.com/Codetoil/LitLaunch-Minecraft/blob/v0.0.5/LitLaunch-SDK)
 
