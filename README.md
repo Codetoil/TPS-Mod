@@ -1,10 +1,10 @@
 # TPSMod
 
 ## Branches
-The `dev` and `main` branches contain source code for the current revision (3.x)
+The `dev` and `main` branches contain source code for the current revision (3.x.x)
 
-The `legacy` branch contain source code for old versions (0.x, 1.x, 2.x) either as-is or reconstructed along with binaries.
-These versions can be reconstructed using the standard MinecraftForge MDK for 1.7.10 for 0.x and 1.x. 2.x can be reconstructed using the
+The `legacy` branch contain source code for old versions (0.x.x, 1.x.x, 2.x.x) either as-is or reconstructed along with binaries.
+These versions can be reconstructed using the standard MinecraftForge MDK for 1.7.10 for 0.x.x and 1.x.x. 2.x.x can be reconstructed using the
 [LitLaunch MDK](https://github.com/Codetoil/LitLaunch-Minecraft/blob/v0.0.5/LitLaunch-SDK)
 
 ## Installing
@@ -15,7 +15,7 @@ If you need help with any of these, join my Discord. Links can be found at the b
 This mod supports a variety of platforms though which ones depend on the version. Installing this mod should be the same as how one usually download mods.
 
 ### TPS Mod - How to install - 2.x.x
-This mod is for [LitLaunch](https://www.curseforge.com/minecraft/mc-mods/litlaunch) for Minecraft 1.7.10-1.15.2
+This mod is for [LitLaunch](https://www.curseforge.com/minecraft/mc-mods/litlaunch) for Minecraft 1.7.10, 1.8.9, 1.12.2, 1.14.4 and 1.15.2 (though it is broken on 1.14.4 and 1.15.2)
 Put the tpsmod jar into a new folder named, "mods_litlaunch", within the .minecraft folder
 
 ### TPS Mod - How to install - 0.x.x/1.x.x
