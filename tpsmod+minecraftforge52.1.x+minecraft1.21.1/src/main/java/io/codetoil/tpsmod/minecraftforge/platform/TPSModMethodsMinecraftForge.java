@@ -1,10 +1,10 @@
 package io.codetoil.tpsmod.minecraftforge.platform;
 
 import com.google.common.collect.Streams;
-import io.codetoil.tpsmod.Dimension;
-import io.codetoil.tpsmod.DimensionArgumentType;
+import io.codetoil.tpsmod.core.Dimension;
+import io.codetoil.tpsmod.core.DimensionArgumentType;
 import io.codetoil.tpsmod.minecraftforge.DimensionArgumentTypeMinecraftForge;
-import io.codetoil.tpsmod.platform.services.ITPSModMethods;
+import io.codetoil.tpsmod.core.platform.services.ITPSModMethods;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerLevel;

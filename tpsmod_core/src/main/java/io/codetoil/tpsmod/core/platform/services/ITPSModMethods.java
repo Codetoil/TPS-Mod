@@ -1,7 +1,7 @@
-package io.codetoil.tpsmod.platform.services;
+package io.codetoil.tpsmod.core.platform.services;
 
-import io.codetoil.tpsmod.Dimension;
-import io.codetoil.tpsmod.DimensionArgumentType;
+import io.codetoil.tpsmod.core.Dimension;
+import io.codetoil.tpsmod.core.DimensionArgumentType;
 import org.jspecify.annotations.Nullable;
 
 import java.util.List;

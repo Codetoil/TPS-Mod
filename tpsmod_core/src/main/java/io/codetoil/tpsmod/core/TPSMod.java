@@ -2,14 +2,14 @@
  * Copyright Codetoil (c) 2019-2026
  */
 
-package io.codetoil.tpsmod;
+package io.codetoil.tpsmod.core;
 
 import com.mojang.brigadier.CommandDispatcher;
 import com.mojang.brigadier.builder.LiteralArgumentBuilder;
 import com.mojang.brigadier.builder.RequiredArgumentBuilder;
-import io.codetoil.tpsmod.commands.CommandHandler;
-import io.codetoil.tpsmod.commands.ICommandSource;
-import io.codetoil.tpsmod.platform.Services;
+import io.codetoil.tpsmod.core.commands.CommandHandler;
+import io.codetoil.tpsmod.core.commands.ICommandSource;
+import io.codetoil.tpsmod.core.platform.Services;
 import org.greenrobot.eventbus.EventBus;
 
 import java.util.ArrayList;

@@ -1,4 +1,4 @@
-package io.codetoil.tpsmod;
+package io.codetoil.tpsmod.core;
 
 import com.mojang.brigadier.StringReader;
 import com.mojang.brigadier.arguments.ArgumentType;

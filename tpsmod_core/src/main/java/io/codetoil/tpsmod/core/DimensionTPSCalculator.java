@@ -2,10 +2,10 @@
  * Copyright Codetoil (c) 2019-2026
  */
 
-package io.codetoil.tpsmod;
+package io.codetoil.tpsmod.core;
 
 
-import io.codetoil.tpsmod.platform.Services;
+import io.codetoil.tpsmod.core.platform.Services;
 import org.greenrobot.eventbus.Subscribe;
 
 public class DimensionTPSCalculator

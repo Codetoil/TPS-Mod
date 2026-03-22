@@ -2,11 +2,11 @@
  * Copyright Codetoil (c) 2019-2026
  */
 
-package io.codetoil.tpsmod.commands;
+package io.codetoil.tpsmod.core.commands;
 
-import io.codetoil.tpsmod.Dimension;
-import io.codetoil.tpsmod.DimensionTPSCalculator;
-import io.codetoil.tpsmod.TPSMod;
+import io.codetoil.tpsmod.core.Dimension;
+import io.codetoil.tpsmod.core.DimensionTPSCalculator;
+import io.codetoil.tpsmod.core.TPSMod;
 
 import java.math.RoundingMode;
 import java.text.DecimalFormat;

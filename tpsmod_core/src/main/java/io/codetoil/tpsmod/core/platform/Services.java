@@ -1,7 +1,7 @@
-package io.codetoil.tpsmod.platform;
+package io.codetoil.tpsmod.core.platform;
 
-import io.codetoil.tpsmod.TPSMod;
-import io.codetoil.tpsmod.platform.services.ITPSModMethods;
+import io.codetoil.tpsmod.core.TPSMod;
+import io.codetoil.tpsmod.core.platform.services.ITPSModMethods;
 
 import java.util.Iterator;
 import java.util.ServiceLoader;

@@ -1,4 +1,4 @@
-package io.codetoil.tpsmod;
+package io.codetoil.tpsmod.core;
 
 public class CalculateTPSEvent {
     public final Dimension dimension;

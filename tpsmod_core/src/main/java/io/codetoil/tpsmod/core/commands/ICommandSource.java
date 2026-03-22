@@ -1,4 +1,4 @@
-package io.codetoil.tpsmod.commands;
+package io.codetoil.tpsmod.core.commands;
 
 import java.util.logging.Level;
 

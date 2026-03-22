@@ -1,4 +1,4 @@
-package io.codetoil.tpsmod;
+package io.codetoil.tpsmod.core;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -2,8 +2,8 @@ package io.codetoil.tpsmod.minecraftforge;
 
 import com.mojang.brigadier.StringReader;
 import com.mojang.brigadier.exceptions.CommandSyntaxException;
-import io.codetoil.tpsmod.Dimension;
-import io.codetoil.tpsmod.DimensionArgumentType;
+import io.codetoil.tpsmod.core.Dimension;
+import io.codetoil.tpsmod.core.DimensionArgumentType;
 import net.minecraft.resources.ResourceLocation;
 
 public class DimensionArgumentTypeMinecraftForge extends DimensionArgumentType {
