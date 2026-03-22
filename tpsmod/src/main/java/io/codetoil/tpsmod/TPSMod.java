@@ -4,10 +4,17 @@
 
 package io.codetoil.tpsmod;
 
-import com.google.common.collect.Lists;
-import io.codetoil.tpsmod.service.ITPSModMethods;
+import com.mojang.brigadier.CommandDispatcher;
+import com.mojang.brigadier.builder.LiteralArgumentBuilder;
+import com.mojang.brigadier.builder.RequiredArgumentBuilder;
+import io.codetoil.tpsmod.commands.CommandHandler;
+import io.codetoil.tpsmod.commands.ICommandSource;
+import io.codetoil.tpsmod.platform.Services;
+import org.greenrobot.eventbus.EventBus;
 
+import java.util.ArrayList;
 import java.util.List;
+import java.util.logging.Level;
 import java.util.logging.Logger;
 
 public class TPSMod
@@ -15,39 +22,67 @@ public class TPSMod
 	public static final String MODID = "tpsmod";
 	public static final String VERSION = "3.0.0-SNAPSHOT";
 	public static final Logger LOGGER = Logger.getLogger("TPSMod");
-	private static final List<MeasureTPSdrop> independentDimensionTPSMeasures = Lists.newArrayList();
-	public static double initialLoadTime;
-	public static ITPSModMethods tpsmodMethods;
-
-	/*List<Command> internalCommandList = new ArrayList<>();
-	try
-	{
-		BiMap<String, ArgumentWrapper<?>> args = HashBiMap.create();
-		switch (LaunchCommon.getSide())
-		{
-			case CLIENT:
-			case BOTH:
-				args.put("dimension", new ArgumentWrapper<>("dimension", new ArgumentParserInteger(), "Dimension to measure the tps of", false));
-				break;
-			case SERVER:
-				args.put("dimension", new ArgumentWrapper<>("dimension", new ArgumentParserInteger(), "Dimension to measure the tps of", true));
-				break;
-		}
-		internalCommandList.add(new Command("/tps", CommandHandler::executeTPS, args, Command.Side.BOTH));
-		internalCommandList.add(new Command("/tpstoall", CommandHandler::executeTPSTOALL, args, Command.Side.BOTH));
-	}
-	catch (Exception e)
-	{
-		e.printStackTrace();
-	}*/
+	public static final EventBus EVENT_BUS = EventBus.builder()
+			.logger(new org.greenrobot.eventbus.Logger.JavaLogger("TPSMod"))
+			.build();
+	public static final List<DimensionTPSCalculator> independentDimensionTPSMeasures = new ArrayList<>();
+	public static long initialLoadTime;
+	private static final long timeInit = System.currentTimeMillis();
+	public static CommandDispatcher<ICommandSource> dispatcher = new CommandDispatcher<>();
 
 	public static void init()
 	{
-		LOGGER.info("TPSMod v" + VERSION + " initializing");
-		List<Dimension> dimensionsList = tpsmodMethods.getDimsAvailable();
+		dispatcher.register(LiteralArgumentBuilder.<ICommandSource>literal("/tps")
+				.then(RequiredArgumentBuilder.<ICommandSource, Dimension>
+								argument("dimension", Services.TPSMOD_METHODS.dimensionArgumentType())
+						.executes(c -> {
+							CommandHandler.executeTPS(c.getSource(),
+									DimensionArgumentType.getDimension(c, "dimension"));
+							return 0;
+						}))
+				.executes(c -> {
+					Dimension dimension = Services.TPSMOD_METHODS.getCurrentDimension();
+					if (dimension == null)
+					{
+						c.getSource().notifyUser("//tps must either be run as a player/entity or one must supply a dimension.", Level.SEVERE);
+						return 1;
+					}
+					CommandHandler.executeTPS(c.getSource(), dimension);
+					return 0;
+				}));
+		dispatcher.register(LiteralArgumentBuilder.<ICommandSource>literal("/tpstoall")
+				.then(RequiredArgumentBuilder.<ICommandSource, Dimension>
+								argument("dimension", Services.TPSMOD_METHODS.dimensionArgumentType())
+						.executes(c -> {
+							CommandHandler.executeTPSTOALL(c.getSource(),
+									DimensionArgumentType.getDimension(c, "dimension"));
+							return 1;
+						}))
+				.executes(c -> {
+					Dimension dimension = Services.TPSMOD_METHODS.getCurrentDimension();
+					if (dimension == null)
+					{
+						c.getSource().notifyUser("//tps must either be run as a player/entity or one must supply a dimension.", Level.SEVERE);
+						return 0;
+					}
+					CommandHandler.executeTPSTOALL(c.getSource(), dimension);
+					return 1;
+				}));
+	}
+
+	public static void serverStarting()
+	{
+		List<Dimension> dimensionsList = Services.TPSMOD_METHODS.getDimsAvailable();
 		LOGGER.info("Dimensions: " + dimensionsList + " (" + dimensionsList.size() + ")");
 		for (Dimension dimension : dimensionsList) {
-			TPSMod.independentDimensionTPSMeasures.add(new MeasureTPSdrop(dimension));
+			independentDimensionTPSMeasures.add(new DimensionTPSCalculator(dimension));
 		}
+		initialLoadTime = System.currentTimeMillis();
+	}
+
+	public static void serverStopping()
+	{
+		independentDimensionTPSMeasures.clear();
+		Dimension.cleanCache();
 	}
 }

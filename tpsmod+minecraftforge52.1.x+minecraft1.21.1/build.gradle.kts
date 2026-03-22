@@ -3,7 +3,7 @@ plugins {
     id("idea")
     id("eclipse")
     id("maven-publish")
-    id("net.minecraftforge.gradle") version "7.0.16"
+    id("net.minecraftforge.gradle") version "[7.0.11,8.0)"
     id("net.minecraftforge.jarjar") version "0.2.3"
 }
 
@@ -37,7 +37,7 @@ println("Java: ${providers.systemProperty("java.version").get()}, " +
 minecraft {
     mappings(mapping_channel, mapping_version)
 
-    useDefaultAccessTransformer()
+    //useDefaultAccessTransformer()
 
     runs {
         configureEach {
@@ -124,7 +124,7 @@ dependencies {
     // in your development environment, helping you catch issues early.
     annotationProcessor("net.minecraftforge:eventbus-validator:7.0.1")
 
-    "jarJar"(project("../tpsmod"))
+    implementation(project(":tpsmod"))
 
     // Example mod dependency with JEI
     // The JEI API is declared for compile time use, while the full JEI artifact is used at runtime

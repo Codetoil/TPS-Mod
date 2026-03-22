@@ -4,4 +4,4 @@ plugins {
 
 rootProject.name = "tpsmod+minecraftforge52.1.x+minecraft1.21.1"
 
-include("../tpsmod")
+includeBuild("../tpsmod")

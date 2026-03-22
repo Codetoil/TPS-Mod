@@ -21,9 +21,11 @@ java {
 }
 
 val brigader_version: String by project
-val guava_version: String by project
+val eventbus_version: String by project
+val jspecify_version: String by project
 
 dependencies {
     api("com.mojang:brigadier:$brigader_version")
-    api("com.google.guava:guava:$guava_version")
+    api("org.greenrobot:eventbus-java:$eventbus_version")
+    api("org.jspecify:jspecify:$jspecify_version")
 }
